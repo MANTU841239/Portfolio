@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantu Kumar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Mantu Kumar</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-400 to-indigo-500 text-white text-center">
+        <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Hi, I'm Mantu Kumar</h1>
+        <p class="text-xl mb-6" data-aos="fade-up" data-aos-delay="200">Aspiring AI/ML Developer & Software Enthusiast</p>
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a href="#contact" class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Me</a>
+            <a href="resume.pdf" class="ml-4 bg-transparent border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-500 transition">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center md:space-x-12">
+            <img src="ggg-removebg-preview.jpg" alt="Profile" class="w-64 rounded-full mb-6 md:mb-0" data-aos="fade-right">
+            <div data-aos="fade-left">
+                <p class="mb-4">I am a passionate AI/ML enthusiast and software developer with a strong foundation in programming and data analysis. I love building projects that solve real-world problems and continuously learning new technologies.</p>
+                <p>Key Highlights:</p>
+                <ul class="list-disc list-inside space-y-2 mt-2">
+                    <li>Proficient in Python, Java, and C++</li>
+                    <li>Strong understanding of Data Structures & Algorithms</li>
+                    <li>Hands-on experience in AI/ML projects</li>
+                    <li>Good problem-solving and analytical skills</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p>HTML, CSS, JavaScript, Tailwind CSS</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4">AI/ML Tools</h3>
+                    <p>TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <img src="project1.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">AI Chatbot</h3>
+                    <p class="mb-4">Developed a chatbot using NLP techniques to assist users with queries.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+                        <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-blue-500 text-white py-20">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Contact Me</h2>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg text-gray-800" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg text-gray-800" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-4 rounded-lg text-gray-800" rows="6" required></textarea>
+                <button type="submit" class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Send Message</button>
+            </form>
+            <div class="flex justify-center space-x-6 mt-10">
+                <a href="#" class="hover:text-gray-200">LinkedIn</a>
+                <a href="#" class="hover:text-gray-200">GitHub</a>
+                <a href="#" class="hover:text-gray-200">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+        &copy; 2025 Mantu Kumar. All Rights Reserved.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
